@@ -70,7 +70,7 @@ const EventList = () => {
                         {[...Array(pageNumber || 0)].map((_, n) => (
                             <a
                                 // eslint-disable-next-line react/no-array-index-key
-                                key={n}
+                                key={currentPage}
                                 href="#events"
                                 onClick={() => setCurrentPage(n + 1)}
                             >
