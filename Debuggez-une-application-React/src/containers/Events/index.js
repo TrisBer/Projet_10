@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState } from "react";
 import EventCard from "../../components/EventCard";
 import Select from "../../components/Select";

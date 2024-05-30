@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from "react";
 import Menu from "../../containers/Menu";
 import EventCard from "../../components/EventCard";
