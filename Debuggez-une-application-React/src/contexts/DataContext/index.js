@@ -2,10 +2,10 @@
 import PropTypes from "prop-types";//import des proptype
 import {
   createContext,//crée un contexte
-  useCallback,//crée une fonction memoisée
+  useCallback,//crée une fonction mémorisée
   useContext,//permet d'accéder au contexte dans un compsant
-  useEffect,//exécite un effet de bord dans un composant fonctionnel
-  useState,//gère l'atat du comosant fonctionnele
+  useEffect,//exécuter un effet de bord dans un composant fonctionnel
+  useState,//gère l'etat du composant fonctionnel
 } from "react";
 
 const DataContext = createContext({});// crée un contexte de donée avec une valeur par défaut vide
@@ -34,7 +34,6 @@ export const DataProvider = ({ children }) => {//défini un comosant dataProvide
   
   return (
     <DataContext.Provider
-      // eslint-disable-next-line react/jsx-no-constructed-context-values
       value={{
         data,
         error,
